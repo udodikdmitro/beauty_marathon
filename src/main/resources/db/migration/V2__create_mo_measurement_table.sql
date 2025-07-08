@@ -1,6 +1,0 @@
-CREATE TABLE IF NOT EXISTS mo_measurement
-(
-    id            BIGSERIAL PRIMARY KEY,
-    mo_date DATE NOT NULL,
-    year INT GENERATED ALWAYS AS (EXTRACT(YEAR FROM mo_date)::INT) STORED
-);
