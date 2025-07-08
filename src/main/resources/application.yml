@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/marathon_db
+    username: postgres
+    password: P@ssword12345
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    user: postgres
+    password: P@ssword12345
+    schemas: public
+    baseline-on-migrate: false
+    url: jdbc:postgresql://localhost:5432/marathon_db
+    driver-class-name: org.postgresql.Driver
+    clean-disabled: false
