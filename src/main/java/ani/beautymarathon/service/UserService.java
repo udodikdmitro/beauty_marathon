@@ -2,6 +2,7 @@ package ani.beautymarathon.service;
 
 import ani.beautymarathon.entity.User;
 import ani.beautymarathon.repository.UserRepository;
+import ani.beautymarathon.view.UpdateUserView;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -30,5 +31,16 @@ public class UserService {
     public User getById(long id) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("User with id " + id + " not found"));
+    }
+
+    public User update(long id, UpdateUserView userView) {
+        User user = getById(id);
+        user.setName(userView.name());
+        user.setStartWeight(userView.startWeight());
+        user.setTargetWeight(userView.targetWeight());
+
+        User updatedUser = userRepository.save(user);
+        log.info("User with id {} has been updated {}", id, updatedUser);
+        return updatedUser;
     }
 }
