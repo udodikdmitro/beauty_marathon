@@ -1,24 +1,26 @@
-[INFO ] 2025-08-07 00:28:20.429 [main]  a.b.BeautyMarathonApplication#logStarting - Starting BeautyMarathonApplication using Java 21.0.1 with PID 11752 (C:\Users\Нися\IdeaProjects\Beauty Marathon\target\classes started by Нися in C:\Users\Нися\IdeaProjects\Beauty Marathon)
-[INFO ] 2025-08-07 00:28:20.443 [main]  a.b.BeautyMarathonApplication#logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2025-08-07 00:28:22.950 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2025-08-07 00:28:23.176 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Finished Spring Data repository scanning in 195 ms. Found 4 JPA repository interfaces.
-[INFO ] 2025-08-07 00:28:24.934 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat initialized with port 8080 (http)
-[INFO ] 2025-08-07 00:28:25.002 [main]  o.a.c.c.StandardService#? - Starting service [Tomcat]
-[INFO ] 2025-08-07 00:28:25.002 [main]  o.a.c.c.StandardEngine#? - Starting Servlet engine: [Apache Tomcat/10.1.42]
-[INFO ] 2025-08-07 00:28:25.162 [main]  o.a.c.c.C.[.[.[/]#? - Initializing Spring embedded WebApplicationContext
-[INFO ] 2025-08-07 00:28:25.166 [main]  o.s.b.w.s.c.ServletWebServerApplicationContext#? - Root WebApplicationContext: initialization completed in 4487 ms
-[INFO ] 2025-08-07 00:28:26.971 [main]  o.f.c.FlywayExecutor#? - Database: jdbc:postgresql://localhost:5432/marathon_db (PostgreSQL 17.4)
-[INFO ] 2025-08-07 00:28:27.351 [main]  o.f.c.i.c.DbValidate#info - Successfully validated 1 migration (execution time 00:00.129s)
-[INFO ] 2025-08-07 00:28:27.565 [main]  o.f.c.i.c.DbMigrate#info - Current version of schema "public": 1
-[INFO ] 2025-08-07 00:28:27.578 [main]  o.f.c.i.c.DbMigrate#info - Schema "public" is up to date. No migration necessary.
-[INFO ] 2025-08-07 00:28:28.010 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Starting...
-[INFO ] 2025-08-07 00:28:28.199 [main]  c.z.h.p.HikariPool#? - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@156cfa20
-[INFO ] 2025-08-07 00:28:28.205 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Start completed.
-[INFO ] 2025-08-07 00:28:28.379 [main]  o.h.j.i.u.LogHelper#logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2025-08-07 00:28:28.653 [main]  o.h.Version#? - HHH000412: Hibernate ORM core version 6.6.18.Final
-[INFO ] 2025-08-07 00:28:28.865 [main]  o.h.c.i.RegionFactoryInitiator#initiateService - HHH000026: Second-level cache disabled
-[INFO ] 2025-08-07 00:28:31.432 [main]  o.s.o.j.p.SpringPersistenceUnitInfo#? - No LoadTimeWeaver setup: ignoring JPA class transformer
-[INFO ] 2025-08-07 00:28:31.808 [main]  o.h.o.c.pooling#? - HHH10001005: Database info:
+[INFO ] 2025-08-11 21:06:23.559 [main]  a.b.BeautyMarathonApplication#logStarting - Starting BeautyMarathonApplication using Java 21.0.1 with PID 5872 (C:\Users\Нися\IdeaProjects\Beauty Marathon\target\classes started by Нися in C:\Users\Нися\IdeaProjects\Beauty Marathon)
+[INFO ] 2025-08-11 21:06:23.565 [main]  a.b.BeautyMarathonApplication#logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2025-08-11 21:06:25.333 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2025-08-11 21:06:25.499 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Finished Spring Data repository scanning in 139 ms. Found 4 JPA repository interfaces.
+[INFO ] 2025-08-11 21:06:26.836 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat initialized with port 8080 (http)
+[INFO ] 2025-08-11 21:06:26.866 [main]  o.a.c.c.StandardService#? - Starting service [Tomcat]
+[INFO ] 2025-08-11 21:06:26.866 [main]  o.a.c.c.StandardEngine#log - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[INFO ] 2025-08-11 21:06:26.989 [main]  o.a.c.c.C.[.[.[/]#? - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-08-11 21:06:26.991 [main]  o.s.b.w.s.c.ServletWebServerApplicationContext#? - Root WebApplicationContext: initialization completed in 3280 ms
+[INFO ] 2025-08-11 21:06:28.421 [main]  o.f.c.i.r.ResourceNameValidator#? - 1 SQL migrations were detected but not run because they did not follow the filename convention.
+[INFO ] 2025-08-11 21:06:28.421 [main]  o.f.c.i.r.ResourceNameValidator#info - Set 'validateMigrationNaming' to true to fail fast and see a list of the invalid file names.
+[INFO ] 2025-08-11 21:06:28.458 [main]  o.f.c.FlywayExecutor#? - Database: jdbc:postgresql://localhost:5432/marathon_db (PostgreSQL 17.4)
+[INFO ] 2025-08-11 21:06:28.767 [main]  o.f.c.i.c.DbValidate#? - Successfully validated 1 migration (execution time 00:00.139s)
+[INFO ] 2025-08-11 21:06:29.133 [main]  o.f.c.i.c.DbMigrate#? - Current version of schema "public": 1
+[INFO ] 2025-08-11 21:06:29.147 [main]  o.f.c.i.c.DbMigrate#? - Schema "public" is up to date. No migration necessary.
+[INFO ] 2025-08-11 21:06:29.261 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Starting...
+[INFO ] 2025-08-11 21:06:29.392 [main]  c.z.h.p.HikariPool#? - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a0f87e5
+[INFO ] 2025-08-11 21:06:29.425 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Start completed.
+[INFO ] 2025-08-11 21:06:29.582 [main]  o.h.j.i.u.LogHelper#logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2025-08-11 21:06:29.784 [main]  o.h.Version#? - HHH000412: Hibernate ORM core version 6.6.18.Final
+[INFO ] 2025-08-11 21:06:29.888 [main]  o.h.c.i.RegionFactoryInitiator#? - HHH000026: Second-level cache disabled
+[INFO ] 2025-08-11 21:06:30.718 [main]  o.s.o.j.p.SpringPersistenceUnitInfo#? - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 2025-08-11 21:06:31.013 [main]  o.h.o.c.pooling#? - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -26,37 +28,38 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-[INFO ] 2025-08-07 00:28:35.020 [main]  o.h.e.t.j.p.i.JtaPlatformInitiator#? - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[INFO ] 2025-08-07 00:28:35.028 [main]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2025-08-07 00:28:35.703 [main]  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration#? - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2025-08-07 00:28:36.723 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat started on port 8080 (http) with context path '/'
-[INFO ] 2025-08-07 00:28:36.751 [main]  a.b.BeautyMarathonApplication#? - Started BeautyMarathonApplication in 18.048 seconds (process running for 35.088)
-[INFO ] 2025-08-07 00:30:25.671 [SpringApplicationShutdownHook]  o.s.b.w.e.t.GracefulShutdown#? - Commencing graceful shutdown. Waiting for active requests to complete
-[INFO ] 2025-08-07 00:30:25.727 [tomcat-shutdown]  o.s.b.w.e.t.GracefulShutdown#? - Graceful shutdown complete
-[INFO ] 2025-08-07 00:30:25.742 [SpringApplicationShutdownHook]  o.s.o.j.LocalContainerEntityManagerFactoryBean#destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2025-08-07 00:30:25.747 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#close - HikariPool-1 - Shutdown initiated...
-[INFO ] 2025-08-07 00:30:25.770 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#close - HikariPool-1 - Shutdown completed.
-[INFO ] 2025-08-07 00:30:40.451 [main]  a.b.BeautyMarathonApplication#? - Starting BeautyMarathonApplication using Java 21.0.1 with PID 16012 (C:\Users\Нися\IdeaProjects\Beauty Marathon\target\classes started by Нися in C:\Users\Нися\IdeaProjects\Beauty Marathon)
-[INFO ] 2025-08-07 00:30:40.459 [main]  a.b.BeautyMarathonApplication#? - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2025-08-07 00:30:42.361 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2025-08-07 00:30:42.572 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#registerRepositoriesIn - Finished Spring Data repository scanning in 182 ms. Found 4 JPA repository interfaces.
-[INFO ] 2025-08-07 00:30:43.703 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat initialized with port 8080 (http)
-[INFO ] 2025-08-07 00:30:43.737 [main]  o.a.c.c.StandardService#? - Starting service [Tomcat]
-[INFO ] 2025-08-07 00:30:43.738 [main]  o.a.c.c.StandardEngine#log - Starting Servlet engine: [Apache Tomcat/10.1.42]
-[INFO ] 2025-08-07 00:30:43.895 [main]  o.a.c.c.C.[.[.[/]#? - Initializing Spring embedded WebApplicationContext
-[INFO ] 2025-08-07 00:30:43.897 [main]  o.s.b.w.s.c.ServletWebServerApplicationContext#? - Root WebApplicationContext: initialization completed in 3295 ms
-[INFO ] 2025-08-07 00:30:45.075 [main]  o.f.c.FlywayExecutor#? - Database: jdbc:postgresql://localhost:5432/marathon_db (PostgreSQL 17.4)
-[INFO ] 2025-08-07 00:30:45.216 [main]  o.f.c.i.c.DbValidate#? - Successfully validated 1 migration (execution time 00:00.072s)
-[INFO ] 2025-08-07 00:30:45.380 [main]  o.f.c.i.c.DbMigrate#info - Current version of schema "public": 1
-[INFO ] 2025-08-07 00:30:45.388 [main]  o.f.c.i.c.DbMigrate#info - Schema "public" is up to date. No migration necessary.
-[INFO ] 2025-08-07 00:30:45.502 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Starting...
-[INFO ] 2025-08-07 00:30:45.651 [main]  c.z.h.p.HikariPool#? - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d120d7c
-[INFO ] 2025-08-07 00:30:45.658 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Start completed.
-[INFO ] 2025-08-07 00:30:45.864 [main]  o.h.j.i.u.LogHelper#? - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2025-08-07 00:30:46.143 [main]  o.h.Version#? - HHH000412: Hibernate ORM core version 6.6.18.Final
-[INFO ] 2025-08-07 00:30:46.253 [main]  o.h.c.i.RegionFactoryInitiator#? - HHH000026: Second-level cache disabled
-[INFO ] 2025-08-07 00:30:47.222 [main]  o.s.o.j.p.SpringPersistenceUnitInfo#? - No LoadTimeWeaver setup: ignoring JPA class transformer
-[INFO ] 2025-08-07 00:30:47.501 [main]  o.h.o.c.pooling#? - HHH10001005: Database info:
+[INFO ] 2025-08-11 21:06:34.430 [main]  o.h.e.t.j.p.i.JtaPlatformInitiator#? - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 2025-08-11 21:06:34.436 [main]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2025-08-11 21:06:35.140 [main]  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration#? - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2025-08-11 21:06:36.008 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat started on port 8080 (http) with context path '/'
+[INFO ] 2025-08-11 21:06:36.026 [main]  a.b.BeautyMarathonApplication#? - Started BeautyMarathonApplication in 13.785 seconds (process running for 19.434)
+[INFO ] 2025-08-11 21:09:51.856 [SpringApplicationShutdownHook]  o.s.b.w.e.t.GracefulShutdown#? - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ] 2025-08-11 21:09:51.902 [tomcat-shutdown]  o.s.b.w.e.t.GracefulShutdown#? - Graceful shutdown complete
+[INFO ] 2025-08-11 21:09:51.936 [SpringApplicationShutdownHook]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2025-08-11 21:09:51.941 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#? - HikariPool-1 - Shutdown initiated...
+[INFO ] 2025-08-11 21:09:51.966 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#close - HikariPool-1 - Shutdown completed.
+[INFO ] 2025-08-11 21:10:01.052 [main]  a.b.BeautyMarathonApplication#? - Starting BeautyMarathonApplication using Java 21.0.1 with PID 21432 (C:\Users\Нися\IdeaProjects\Beauty Marathon\target\classes started by Нися in C:\Users\Нися\IdeaProjects\Beauty Marathon)
+[INFO ] 2025-08-11 21:10:01.061 [main]  a.b.BeautyMarathonApplication#logStartupProfileInfo - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 2025-08-11 21:10:02.655 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[INFO ] 2025-08-11 21:10:02.885 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Finished Spring Data repository scanning in 193 ms. Found 4 JPA repository interfaces.
+[INFO ] 2025-08-11 21:10:03.967 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat initialized with port 8080 (http)
+[INFO ] 2025-08-11 21:10:03.996 [main]  o.a.c.c.StandardService#? - Starting service [Tomcat]
+[INFO ] 2025-08-11 21:10:03.997 [main]  o.a.c.c.StandardEngine#? - Starting Servlet engine: [Apache Tomcat/10.1.42]
+[INFO ] 2025-08-11 21:10:04.153 [main]  o.a.c.c.C.[.[.[/]#? - Initializing Spring embedded WebApplicationContext
+[INFO ] 2025-08-11 21:10:04.155 [main]  o.s.b.w.s.c.ServletWebServerApplicationContext#? - Root WebApplicationContext: initialization completed in 2943 ms
+[INFO ] 2025-08-11 21:10:05.395 [main]  o.f.c.FlywayExecutor#info - Database: jdbc:postgresql://localhost:5432/marathon_db (PostgreSQL 17.4)
+[INFO ] 2025-08-11 21:10:05.563 [main]  o.f.c.i.c.DbValidate#? - Successfully validated 2 migrations (execution time 00:00.096s)
+[INFO ] 2025-08-11 21:10:05.727 [main]  o.f.c.i.c.DbMigrate#? - Current version of schema "public": 1
+[INFO ] 2025-08-11 21:10:05.755 [main]  o.f.c.i.c.DbMigrate#? - Migrating schema "public" to version "2 - rename column"
+[INFO ] 2025-08-11 21:10:05.816 [main]  o.f.c.i.c.DbMigrate#info - Successfully applied 1 migration to schema "public", now at version v2 (execution time 00:00.024s)
+[INFO ] 2025-08-11 21:10:05.923 [main]  c.z.h.HikariDataSource#getConnection - HikariPool-1 - Starting...
+[INFO ] 2025-08-11 21:10:06.110 [main]  c.z.h.p.HikariPool#? - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ed65e4b
+[INFO ] 2025-08-11 21:10:06.112 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Start completed.
+[INFO ] 2025-08-11 21:10:06.301 [main]  o.h.j.i.u.LogHelper#? - HHH000204: Processing PersistenceUnitInfo [name: default]
+[INFO ] 2025-08-11 21:10:06.522 [main]  o.h.Version#logVersion - HHH000412: Hibernate ORM core version 6.6.18.Final
+[INFO ] 2025-08-11 21:10:06.607 [main]  o.h.c.i.RegionFactoryInitiator#? - HHH000026: Second-level cache disabled
+[INFO ] 2025-08-11 21:10:07.416 [main]  o.s.o.j.p.SpringPersistenceUnitInfo#addTransformer - No LoadTimeWeaver setup: ignoring JPA class transformer
+[INFO ] 2025-08-11 21:10:07.684 [main]  o.h.o.c.pooling#? - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 17.4
@@ -64,59 +67,13 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-[INFO ] 2025-08-07 00:30:50.188 [main]  o.h.e.t.j.p.i.JtaPlatformInitiator#? - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[INFO ] 2025-08-07 00:30:50.196 [main]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2025-08-07 00:30:50.738 [main]  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration#? - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2025-08-07 00:30:51.622 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat started on port 8080 (http) with context path '/'
-[INFO ] 2025-08-07 00:30:51.637 [main]  a.b.BeautyMarathonApplication#? - Started BeautyMarathonApplication in 12.798 seconds (process running for 16.71)
-[INFO ] 2025-08-07 00:33:27.951 [http-nio-8080-exec-2]  o.a.c.c.C.[.[.[/]#log - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2025-08-07 00:33:27.952 [http-nio-8080-exec-2]  o.s.w.s.DispatcherServlet#initServletBean - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2025-08-07 00:33:27.955 [http-nio-8080-exec-2]  o.s.w.s.DispatcherServlet#initServletBean - Completed initialization in 3 ms
-[INFO ] 2025-08-07 00:40:49.163 [SpringApplicationShutdownHook]  o.s.b.w.e.t.GracefulShutdown#? - Commencing graceful shutdown. Waiting for active requests to complete
-[INFO ] 2025-08-07 00:40:49.218 [tomcat-shutdown]  o.s.b.w.e.t.GracefulShutdown#? - Graceful shutdown complete
-[INFO ] 2025-08-07 00:40:49.244 [SpringApplicationShutdownHook]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2025-08-07 00:40:49.275 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#? - HikariPool-1 - Shutdown initiated...
-[INFO ] 2025-08-07 00:40:49.314 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#? - HikariPool-1 - Shutdown completed.
-[INFO ] 2025-08-07 00:41:14.807 [main]  a.b.BeautyMarathonApplication#? - Starting BeautyMarathonApplication using Java 21.0.1 with PID 14164 (C:\Users\Нися\IdeaProjects\Beauty Marathon\target\classes started by Нися in C:\Users\Нися\IdeaProjects\Beauty Marathon)
-[INFO ] 2025-08-07 00:41:14.814 [main]  a.b.BeautyMarathonApplication#? - No active profile set, falling back to 1 default profile: "default"
-[INFO ] 2025-08-07 00:41:17.385 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-[INFO ] 2025-08-07 00:41:17.646 [main]  o.s.d.r.c.RepositoryConfigurationDelegate#? - Finished Spring Data repository scanning in 208 ms. Found 4 JPA repository interfaces.
-[INFO ] 2025-08-07 00:41:19.173 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat initialized with port 8080 (http)
-[INFO ] 2025-08-07 00:41:19.215 [main]  o.a.c.c.StandardService#? - Starting service [Tomcat]
-[INFO ] 2025-08-07 00:41:19.216 [main]  o.a.c.c.StandardEngine#? - Starting Servlet engine: [Apache Tomcat/10.1.42]
-[INFO ] 2025-08-07 00:41:19.430 [main]  o.a.c.c.C.[.[.[/]#? - Initializing Spring embedded WebApplicationContext
-[INFO ] 2025-08-07 00:41:19.433 [main]  o.s.b.w.s.c.ServletWebServerApplicationContext#? - Root WebApplicationContext: initialization completed in 4376 ms
-[INFO ] 2025-08-07 00:41:21.037 [main]  o.f.c.FlywayExecutor#? - Database: jdbc:postgresql://localhost:5432/marathon_db (PostgreSQL 17.4)
-[INFO ] 2025-08-07 00:41:21.219 [main]  o.f.c.i.c.DbValidate#info - Successfully validated 1 migration (execution time 00:00.097s)
-[INFO ] 2025-08-07 00:41:21.515 [main]  o.f.c.i.c.DbMigrate#? - Current version of schema "public": 1
-[INFO ] 2025-08-07 00:41:21.526 [main]  o.f.c.i.c.DbMigrate#info - Schema "public" is up to date. No migration necessary.
-[INFO ] 2025-08-07 00:41:21.751 [main]  c.z.h.HikariDataSource#getConnection - HikariPool-1 - Starting...
-[INFO ] 2025-08-07 00:41:21.960 [main]  c.z.h.p.HikariPool#? - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a48d186
-[INFO ] 2025-08-07 00:41:21.966 [main]  c.z.h.HikariDataSource#? - HikariPool-1 - Start completed.
-[INFO ] 2025-08-07 00:41:22.082 [main]  o.h.j.i.u.LogHelper#? - HHH000204: Processing PersistenceUnitInfo [name: default]
-[INFO ] 2025-08-07 00:41:22.333 [main]  o.h.Version#? - HHH000412: Hibernate ORM core version 6.6.18.Final
-[INFO ] 2025-08-07 00:41:22.465 [main]  o.h.c.i.RegionFactoryInitiator#? - HHH000026: Second-level cache disabled
-[INFO ] 2025-08-07 00:41:23.623 [main]  o.s.o.j.p.SpringPersistenceUnitInfo#? - No LoadTimeWeaver setup: ignoring JPA class transformer
-[INFO ] 2025-08-07 00:41:23.899 [main]  o.h.o.c.pooling#? - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 17.4
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-[INFO ] 2025-08-07 00:41:26.808 [main]  o.h.e.t.j.p.i.JtaPlatformInitiator#? - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[INFO ] 2025-08-07 00:41:26.815 [main]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Initialized JPA EntityManagerFactory for persistence unit 'default'
-[WARN ] 2025-08-07 00:41:27.287 [main]  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration#? - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-[INFO ] 2025-08-07 00:41:28.312 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat started on port 8080 (http) with context path '/'
-[INFO ] 2025-08-07 00:41:28.331 [main]  a.b.BeautyMarathonApplication#? - Started BeautyMarathonApplication in 15.344 seconds (process running for 20.608)
-[INFO ] 2025-08-07 00:41:29.759 [http-nio-8080-exec-1]  o.a.c.c.C.[.[.[/]#? - Initializing Spring DispatcherServlet 'dispatcherServlet'
-[INFO ] 2025-08-07 00:41:29.760 [http-nio-8080-exec-1]  o.s.w.s.DispatcherServlet#? - Initializing Servlet 'dispatcherServlet'
-[INFO ] 2025-08-07 00:41:29.764 [http-nio-8080-exec-1]  o.s.w.s.DispatcherServlet#? - Completed initialization in 2 ms
-[INFO ] 2025-08-07 00:41:30.706 [http-nio-8080-exec-1]  a.b.s.UserService#update - User with id 2 has been updated Участник 2: Anisia Krrr, стартовый вес 70.000, цель: 82.000
-
-[INFO ] 2025-08-07 00:45:29.960 [SpringApplicationShutdownHook]  o.s.b.w.e.t.GracefulShutdown#? - Commencing graceful shutdown. Waiting for active requests to complete
-[INFO ] 2025-08-07 00:45:30.004 [tomcat-shutdown]  o.s.b.w.e.t.GracefulShutdown#? - Graceful shutdown complete
-[INFO ] 2025-08-07 00:45:30.013 [SpringApplicationShutdownHook]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Closing JPA EntityManagerFactory for persistence unit 'default'
-[INFO ] 2025-08-07 00:45:30.020 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#close - HikariPool-1 - Shutdown initiated...
-[INFO ] 2025-08-07 00:45:30.045 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#close - HikariPool-1 - Shutdown completed.
+[INFO ] 2025-08-11 21:10:10.067 [main]  o.h.e.t.j.p.i.JtaPlatformInitiator#? - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[INFO ] 2025-08-11 21:10:10.074 [main]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[WARN ] 2025-08-11 21:10:10.573 [main]  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration#? - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[INFO ] 2025-08-11 21:10:11.307 [main]  o.s.b.w.e.t.TomcatWebServer#? - Tomcat started on port 8080 (http) with context path '/'
+[INFO ] 2025-08-11 21:10:11.338 [main]  a.b.BeautyMarathonApplication#? - Started BeautyMarathonApplication in 11.531 seconds (process running for 15.125)
+[INFO ] 2025-08-11 21:22:52.498 [SpringApplicationShutdownHook]  o.s.b.w.e.t.GracefulShutdown#? - Commencing graceful shutdown. Waiting for active requests to complete
+[INFO ] 2025-08-11 21:22:52.551 [tomcat-shutdown]  o.s.b.w.e.t.GracefulShutdown#? - Graceful shutdown complete
+[INFO ] 2025-08-11 21:22:52.574 [SpringApplicationShutdownHook]  o.s.o.j.LocalContainerEntityManagerFactoryBean#? - Closing JPA EntityManagerFactory for persistence unit 'default'
+[INFO ] 2025-08-11 21:22:52.583 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#? - HikariPool-1 - Shutdown initiated...
+[INFO ] 2025-08-11 21:22:52.606 [SpringApplicationShutdownHook]  c.z.h.HikariDataSource#? - HikariPool-1 - Shutdown completed.

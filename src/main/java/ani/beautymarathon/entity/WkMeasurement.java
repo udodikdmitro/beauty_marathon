@@ -39,7 +39,7 @@ public class WkMeasurement {
     private ClosedState closedState;
 
     @ManyToOne
-    @JoinColumn(name = "month_id")
+    @JoinColumn(name = "mo_measurement_id")
     private MoMeasurement moMeasurement;
 
     @OneToMany(mappedBy = "wkMeasurement")
