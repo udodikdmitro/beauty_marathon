@@ -76,16 +76,16 @@ public class UserMeasurement {
 
     @Override
     public String toString() {
-        return "Замер за неделю: " + wkMeasurement +
-                "\nУчастник " + user +
-                ":\nвес: " + weight +
-                "\nбаллы за вес: " + weightPoint +
-                "\nбаллы за сон: " + sleepPoint +
-                "\nбаллы за воду: " + waterPoint +
-                "\nбаллы за шаги: " + stepPoint +
-                "\nбаллы за дневник: " + diaryPoint +
-                "\nбаллы за трезвость: " + alcoholFreePoints +
-                "\n\nКомментарий: " + commentary
+        return "Measurement per week: " + wkMeasurement +
+                "\nUser " + user +
+                ":\nweight: " + weight +
+                "\nweight points: " + weightPoint +
+                "\nsleep points: " + sleepPoint +
+                "\nwater points: " + waterPoint +
+                "\nstep points: " + stepPoint +
+                "\ndiary points: " + diaryPoint +
+                "\nalocohol-free points: " + alcoholFreePoints +
+                "\n\nCommentary: " + commentary
                 ;
     }
 }
