@@ -1,8 +1,5 @@
 package ani.beautymarathon.service;
 
-import ani.beautymarathon.entity.MoMeasurement;
-import ani.beautymarathon.entity.UserMeasurement;
-import ani.beautymarathon.entity.WkMeasurement;
 import ani.beautymarathon.repository.MoMeasurementRepository;
 import ani.beautymarathon.repository.UserMeasurementRepository;
 import ani.beautymarathon.repository.WkMeasurementRepository;
@@ -22,15 +19,5 @@ public class MeasurementService {
         this.userMeasurementRepository = userMeasurementRepository;
     }
 
-    public MoMeasurement createMoMeasurement(MoMeasurement moMeasurement) {
-        return moMeasurementRepository.save(moMeasurement);
-    }
 
-    public WkMeasurement createWkMeasurement(WkMeasurement wkMeasurement) {
-        return wkMeasurementRepository.save(wkMeasurement);
-    }
-
-    public UserMeasurement createUserMeasurement(UserMeasurement userMeasurement) {
-        return userMeasurementRepository.save(userMeasurement);
-    }
 }
