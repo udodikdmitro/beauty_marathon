@@ -50,7 +50,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "Участник " + id + ": " + name + ", стартовый вес "
-                + startWeight + ", цель: " + targetWeight + "\n";
+        return "User " + id + ": " + name + ", start weight: "
+                + startWeight + ", target weight: " + targetWeight + "\n";
     }
 }

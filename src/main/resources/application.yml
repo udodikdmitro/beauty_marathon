@@ -12,3 +12,4 @@ spring:
     url: jdbc:postgresql://localhost:5432/marathon_db
     driver-class-name: org.postgresql.Driver
     clean-disabled: false
+    validate-on-migrate: false
