@@ -38,6 +38,9 @@ public class WkMeasurement {
     @Column(name = "closed_state")
     private ClosedState closedState;
 
+    @Column(name = "commentary")
+    private String commentary;
+
     @ManyToOne
     @JoinColumn(name = "mo_measurement_id")
     private MoMeasurement moMeasurement;
@@ -45,13 +48,20 @@ public class WkMeasurement {
     @OneToMany(mappedBy = "wkMeasurement")
     private List<UserMeasurement> userMeasurements;
 
-    public WkMeasurement(Long id, Integer weekNumber, LocalDate measurementDate,
-                         ClosedState closedState, MoMeasurement moMeasurement,
-                         List<UserMeasurement> userMeasurements) {
+    public WkMeasurement(
+            Long id,
+            Integer weekNumber,
+            LocalDate measurementDate,
+            ClosedState closedState,
+            String commentary,
+            MoMeasurement moMeasurement,
+            List<UserMeasurement> userMeasurements
+    ) {
         this.id = id;
         this.weekNumber = weekNumber;
         this.measurementDate = measurementDate;
         this.closedState = closedState;
+        this.commentary = commentary;
         this.moMeasurement = moMeasurement;
         this.userMeasurements = userMeasurements;
     }

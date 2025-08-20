@@ -28,7 +28,7 @@ public class MoMeasurement {
     private Long id;
 
     @Column(name = "mo_date")
-    private LocalDate date;
+    private LocalDate moDate;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "closed_state")
@@ -37,15 +37,19 @@ public class MoMeasurement {
     @Column(name = "year", updatable = false)
     private Integer year;
 
+    @Column(name = "month_number", updatable = false)
+    private Integer monthNumber;
+
     @OneToMany(mappedBy = "moMeasurement")
     private List<WkMeasurement> wkMeasurements;
 
-    public MoMeasurement(Long id, LocalDate date, ClosedState closedState,
-                         Integer year, List<WkMeasurement> wkMeasurements) {
+    public MoMeasurement(Long id, LocalDate date, ClosedState closedState, Integer year,
+                         Integer monthNumber, List<WkMeasurement> wkMeasurements) {
         this.id = id;
-        this.date = date;
+        this.moDate = date;
         this.closedState = closedState;
         this.year = year;
+        this.monthNumber = monthNumber;
         this.wkMeasurements = wkMeasurements;
     }
 
