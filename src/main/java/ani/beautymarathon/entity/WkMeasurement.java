@@ -28,9 +28,6 @@ public class WkMeasurement {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "week_number")
-    private Integer weekNumber;
-
     @Column(name = "measurement_date")
     private LocalDate measurementDate;
 
@@ -50,7 +47,6 @@ public class WkMeasurement {
 
     public WkMeasurement(
             Long id,
-            Integer weekNumber,
             LocalDate measurementDate,
             ClosedState closedState,
             String commentary,
@@ -58,7 +54,6 @@ public class WkMeasurement {
             List<UserMeasurement> userMeasurements
     ) {
         this.id = id;
-        this.weekNumber = weekNumber;
         this.measurementDate = measurementDate;
         this.closedState = closedState;
         this.commentary = commentary;
@@ -67,6 +62,5 @@ public class WkMeasurement {
     }
 
     public WkMeasurement() {
-
     }
 }
