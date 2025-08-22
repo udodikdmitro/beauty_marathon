@@ -33,7 +33,7 @@ public class WkMeasurement {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "closed_state")
-    private ClosedState closedState;
+    private ClosedState closedState = ClosedState.OPEN;
 
     @Column(name = "commentary")
     private String commentary;

@@ -1,6 +1,5 @@
 package ani.beautymarathon.controller;
 
-import ani.beautymarathon.entity.ClosedState;
 import ani.beautymarathon.entity.MoMeasurement;
 import ani.beautymarathon.entity.WkMeasurement;
 import ani.beautymarathon.service.MeasurementService;
@@ -28,7 +27,6 @@ public class MeasurementController {
 
         newWkMeasurement.setMeasurementDate(newWkMeasurementView.measurementDate());
         newWkMeasurement.setCommentary(newWkMeasurementView.commentary());
-        newWkMeasurement.setClosedState(ClosedState.OPEN);
 
         WkMeasurement createdWkMeasurement = measurementService.createWkMeasurement(newWkMeasurement);
         return constructWeekMeasurementView(createdWkMeasurement);

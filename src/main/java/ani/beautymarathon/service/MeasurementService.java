@@ -50,7 +50,6 @@ public class MeasurementService {
                 },
                 () -> {
                     MoMeasurement moMeasurement = new MoMeasurement();
-                    moMeasurement.setClosedState(ClosedState.OPEN);
                     moMeasurement.setMoDate(measurementDate);
                     MoMeasurement savedMonth = moMeasurementRepository.save(moMeasurement);
                     log.info("Saved month: {}", savedMonth);

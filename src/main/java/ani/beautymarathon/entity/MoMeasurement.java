@@ -12,6 +12,8 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Generated;
+import org.hibernate.generator.EventType;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -32,11 +34,13 @@ public class MoMeasurement {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "closed_state")
-    private ClosedState closedState;
+    private ClosedState closedState = ClosedState.OPEN;
 
+    @Generated(event = { EventType.INSERT, EventType.UPDATE })
     @Column(name = "year", updatable = false, insertable = false)
     private Integer year;
 
+    @Generated(event = { EventType.INSERT, EventType.UPDATE })
     @Column(name = "month_number", updatable = false, insertable = false)
     private Integer monthNumber;
 
