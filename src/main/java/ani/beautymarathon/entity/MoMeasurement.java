@@ -34,10 +34,10 @@ public class MoMeasurement {
     @Column(name = "closed_state")
     private ClosedState closedState;
 
-    @Column(name = "year", updatable = false)
+    @Column(name = "year", updatable = false, insertable = false)
     private Integer year;
 
-    @Column(name = "month_number", updatable = false)
+    @Column(name = "month_number", updatable = false, insertable = false)
     private Integer monthNumber;
 
     @OneToMany(mappedBy = "moMeasurement")
@@ -55,6 +55,18 @@ public class MoMeasurement {
 
     public MoMeasurement() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "MoMeasurement{" +
+                "id=" + id +
+                ", moDate=" + moDate +
+                ", closedState=" + closedState +
+                ", year=" + year +
+                ", monthNumber=" + monthNumber +
+                ", wkMeasurements=" + wkMeasurements +
+                '}';
     }
 }
 

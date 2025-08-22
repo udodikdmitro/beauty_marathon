@@ -23,6 +23,16 @@ public class ApiExceptionHandler {
         return constructApiErrorWithHttpStatus(apiError);
     }
 
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ApiError> handleIllegalArgument(IllegalArgumentException ex) {
+        HttpStatus badRequest = HttpStatus.BAD_REQUEST;
+        ApiError apiError = new ApiError(
+                badRequest,
+                ex.getMessage()
+        );
+        return constructApiErrorWithHttpStatus(apiError);
+    }
+
     @ExceptionHandler(value = {MethodArgumentNotValidException.class})
     public ResponseEntity<ApiError> handleMethodArgumentNotValid(MethodArgumentNotValidException ex) {
         var errs = ex.getBindingResult()

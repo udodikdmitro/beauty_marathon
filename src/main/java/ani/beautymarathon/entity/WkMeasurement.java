@@ -63,4 +63,15 @@ public class WkMeasurement {
 
     public WkMeasurement() {
     }
+
+    @Override
+    public String toString() {
+        return "WkMeasurement{" +
+                "id=" + id +
+                ", measurementDate=" + measurementDate +
+                ", closedState=" + closedState +
+                ", commentary='" + commentary + '\'' +
+                ", moMeasurementId=" + moMeasurement.getId() +
+                '}';
+    }
 }
