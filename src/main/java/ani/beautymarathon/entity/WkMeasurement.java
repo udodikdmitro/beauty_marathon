@@ -28,15 +28,15 @@ public class WkMeasurement {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "week_number")
-    private Integer weekNumber;
-
     @Column(name = "measurement_date")
     private LocalDate measurementDate;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "closed_state")
-    private ClosedState closedState;
+    private ClosedState closedState = ClosedState.OPEN;
+
+    @Column(name = "commentary")
+    private String commentary;
 
     @ManyToOne
     @JoinColumn(name = "mo_measurement_id")
@@ -45,18 +45,33 @@ public class WkMeasurement {
     @OneToMany(mappedBy = "wkMeasurement")
     private List<UserMeasurement> userMeasurements;
 
-    public WkMeasurement(Long id, Integer weekNumber, LocalDate measurementDate,
-                         ClosedState closedState, MoMeasurement moMeasurement,
-                         List<UserMeasurement> userMeasurements) {
+    public WkMeasurement(
+            Long id,
+            LocalDate measurementDate,
+            ClosedState closedState,
+            String commentary,
+            MoMeasurement moMeasurement,
+            List<UserMeasurement> userMeasurements
+    ) {
         this.id = id;
-        this.weekNumber = weekNumber;
         this.measurementDate = measurementDate;
         this.closedState = closedState;
+        this.commentary = commentary;
         this.moMeasurement = moMeasurement;
         this.userMeasurements = userMeasurements;
     }
 
     public WkMeasurement() {
+    }
 
+    @Override
+    public String toString() {
+        return "WkMeasurement{" +
+                "id=" + id +
+                ", measurementDate=" + measurementDate +
+                ", closedState=" + closedState +
+                ", commentary='" + commentary + '\'' +
+                ", moMeasurementId=" + moMeasurement.getId() +
+                '}';
     }
 }
