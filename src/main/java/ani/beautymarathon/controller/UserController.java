@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
@@ -54,10 +55,16 @@ public class UserController {
         return constructUserView(user);
     }
 
+    @PutMapping("/status/{id}")
+    public GetUserView updateUserStatus(@PathVariable Long id, @RequestParam("newState") DeletedState newState) {
+        final User updatedUser = userService.updateStatus(id, newState);
+        return constructUserView(updatedUser);
+    }
+
     @PutMapping("/update/{id}")
     public GetUserView updateUserView(@PathVariable Long id, @RequestBody UpdateUserView userView) {
-        final User updateUser = userService.update(id, userView);
-        return constructUserView(updateUser);
+        final User updatedUser = userService.update(id, userView);
+        return constructUserView(updatedUser);
     }
 
     private GetUserView constructUserView(User user) {
